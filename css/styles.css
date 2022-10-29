@@ -230,8 +230,8 @@ letter-spacing: 0.03em;
 } 
 
 .team-member{
+    font-size: 16px;
     font-weight: 500;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 .profession{
@@ -291,11 +291,11 @@ margin-right: 0;
 }
 
 .project-list .title-project {
-    margin-top: 20px;
     margin-bottom: 4px;
 }
 .name-project{
     padding: 20px 24px;
+    border: 1px solid #EEEEEE;
 }
 .project-item{
     display: block;
@@ -334,7 +334,7 @@ letter-spacing: 0.03em;
  color: var(--accent-color);
 
 .footer-contacts .item:not(:last-child) {
-        margin-right: 9px;
+        margin-bottom: 9px;
     }
 }
 /* Button */
