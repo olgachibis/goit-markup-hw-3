@@ -49,7 +49,7 @@ margin: 0;
 /* Header */
 .header{
 background-color: var(--secondary-white-color);
-border: 1px solid #ECECEC;
+border-bottom: 1px solid #ECECEC;
 
 }
 .main-header{
@@ -132,7 +132,8 @@ color:var(--accent-color);
  }
  /* Section */
  .hero{
-    margin-bottom: 94px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 
     background-color: #2F303A; 
     text-align: center;
@@ -140,8 +141,9 @@ color:var(--accent-color);
      } 
 
  .hero-title{
-margin-top: 0;
+margin: 0 auto;
 margin-bottom: 30px;
+width: 696px;
 
 color: var(--secondary-white-color);
 font-weight: 900;
@@ -170,6 +172,9 @@ text-transform: uppercase;
     line-height: calc(16/14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+.benefits{
+    padding-top: 94px;
 }
 .benefits-list, .our-work, .our-team{
     display: flex;
@@ -202,14 +207,18 @@ margin-right: 30px;
     margin-right: 0;
 }
 .our-team .item {
-    width: 270px;
     margin-right: 30px;
+
+    background: var(--secondary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .our-team .item:nth-child(4n) {
     margin-right: 0;
 }
 .team{
+    padding-top: 94px;
     background-color: #F5F4FA;
 }
 .our-team{
@@ -217,10 +226,7 @@ font-size: 16px;
 line-height: calc(19/16);
 text-align: center;
 letter-spacing: 0.03em;
-margin-bottom: 30px;
-background: var(--secondary-white-color);
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+
 } 
 
 .team-member{
@@ -235,14 +241,23 @@ border-radius: 0px 0px 4px 4px;
     font-size: 16px;
 
     }
+    .team-description{
+        padding-top: 30px;
+        padding-bottom: 30px;
+            }
+            .team-img{
+                display: block;
+            }
 
 /* Portfolio */
-
+.portfolio{
+padding-top: 94px;
+padding-bottom: 94px;
+}
 .projects{
     display: flex;
     justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 34px;
+    margin-bottom: 34px;
 }
 .projects .item:not(:last-child) {
     margin-right: 8px;
@@ -264,8 +279,7 @@ border-radius: 0px 0px 4px 4px;
 .project-list{
     display: flex;
     flex-wrap: wrap;
-   
-}
+   }
  
 .project-list .item{
     width: 370px;
@@ -274,31 +288,36 @@ border-radius: 0px 0px 4px 4px;
 }
 .project-list .item:nth-child(3n){
 margin-right: 0;
-
 }
 
 .project-list .title-project {
     margin-top: 20px;
     margin-bottom: 4px;
 }
+.name-project{
+    padding: 20px 24px;
+}
+.project-item{
+    display: block;
+}
+
 /* Footer */
 address{
     font-style: normal;
 }
 .footer{
- background-color: var(--primary-text-color);
+ padding-top: 60px;
+ padding-bottom: 60px;
+    background-color: var(--primary-text-color);
  
  }
 .footer-main .logo {
-margin-left: 215px;
-padding-top: 60px;
 margin-bottom: 20px;
 } 
 
-.footer-main .footer-contacts {
-margin-left: 215px;
-padding-bottom: 20px;
-}
+/* .footer-main .footer-contacts {
+
+} */
 
 .footer-contacts .link{
 color: rgba(255, 255, 255, 0.6);
@@ -313,6 +332,10 @@ letter-spacing: 0.03em;
 .footer-contacts .link:hover,
 .footer-contacts .link:focus {
  color: var(--accent-color);
+
+.footer-contacts .item:not(:last-child) {
+        margin-right: 9px;
+    }
 }
 /* Button */
 .button {
@@ -326,6 +349,7 @@ letter-spacing: 0.03em;
     
 }
 .button.hero-button {
+    padding: 10px 32px;
     color: var(--primary-white-color);
     background-color: var(--accent-color); 
     font-weight: 700;
@@ -341,14 +365,15 @@ letter-spacing: 0.03em;
     background-color: #188CE8;
 }
  .button.projects-button{ 
+    padding: 6px 22px;
     color:var(--primary-text-color);
-    background-color:var(--secondary-white-color) ; 
+    background-color:#F5F4FA; ; 
     font-weight: 500;
     line-height: calc(26/16);
     letter-spacing: 0.03em;
     /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
     border-radius: 4px;
-    border-color: transparent;
+    border: none;
 }
 .button.projects-button:focus,
 .button.projects-button:hover {
