@@ -36,7 +36,11 @@ h1,h2,h3,h4,h5,ul,p{
 padding: 0;
 margin: 0;
 }
-
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -115,7 +119,7 @@ color:var(--accent-color);
         margin-right: 93px;
 
     color: var(--primary-text-color);
-    font-family: 'Raleway';
+    font-family: Raleway;
      font-style: normal;
      font-weight: 700;
      font-size: 26px;
@@ -235,7 +239,6 @@ letter-spacing: 0.03em;
     margin-bottom: 10px;
 }
 .profession{
-    margin-bottom: 30px;
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 16px;
@@ -257,7 +260,7 @@ padding-bottom: 94px;
 .projects{
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 .projects .item:not(:last-child) {
     margin-right: 8px;
@@ -295,7 +298,9 @@ margin-right: 0;
 }
 .name-project{
     padding: 20px 24px;
-    border: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
 .project-item{
     display: block;
@@ -308,7 +313,7 @@ address{
 .footer{
  padding-top: 60px;
  padding-bottom: 60px;
-    background-color: var(--primary-text-color);
+ background-color: #2F303A;;
  
  }
 .footer-main .logo {
@@ -323,7 +328,7 @@ margin-bottom: 20px;
 color: rgba(255, 255, 255, 0.6);
 font-weight: 400;
 font-size: 14px;
-line-height: 2;
+line-height: calc(24/14);
 letter-spacing: 0.03em;
 }
 .footer-contacts .address{
