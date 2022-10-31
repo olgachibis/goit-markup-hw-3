@@ -336,12 +336,12 @@ letter-spacing: 0.03em;
 }
 .footer-contacts .link:hover,
 .footer-contacts .link:focus {
- color: var(--accent-color);
+ color: var(--accent-color);}
 
 .footer-contacts .item:not(:last-child) {
-        margin-bottom: 9px;
-    }
+    margin-bottom: 9px;
 }
+
 /* Button */
 .button {
     color: var(--primary-text-color);
